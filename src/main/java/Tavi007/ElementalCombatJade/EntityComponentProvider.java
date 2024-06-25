@@ -1,4 +1,4 @@
-package Tavi007.ElementalCombatWTHIT;
+package Tavi007.ElementalCombatJade;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
