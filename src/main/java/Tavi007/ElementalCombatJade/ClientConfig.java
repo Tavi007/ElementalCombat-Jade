@@ -1,5 +1,5 @@
 
-package Tavi007.ElementalCombatWTHIT;
+package Tavi007.ElementalCombatJade;
 
 import org.apache.commons.lang3.tuple.Pair;
 
