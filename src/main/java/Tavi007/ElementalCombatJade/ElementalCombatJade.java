@@ -1,4 +1,4 @@
-package Tavi007.ElementalCombatWTHIT;
+package Tavi007.ElementalCombatJade;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

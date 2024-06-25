@@ -1,4 +1,4 @@
-package Tavi007.ElementalCombatWTHIT;
+package Tavi007.ElementalCombatJade;
 
 import mcp.mobius.waila.api.IRegistrar;
 import mcp.mobius.waila.api.IWailaPlugin;
