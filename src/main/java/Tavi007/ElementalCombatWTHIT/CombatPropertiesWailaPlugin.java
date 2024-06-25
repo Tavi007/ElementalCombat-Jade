@@ -1,11 +1,10 @@
 package Tavi007.ElementalCombatWTHIT;
 
-import mcp.mobius.waila.api.IRegistrar;
-import mcp.mobius.waila.api.IWailaPlugin;
-import mcp.mobius.waila.api.TooltipPosition;
-import mcp.mobius.waila.api.WailaPlugin;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.LivingEntity;
+import snownee.jade.api.IWailaClientRegistration;
+import snownee.jade.api.IWailaCommonRegistration;
+import snownee.jade.api.IWailaPlugin;
+import snownee.jade.api.WailaPlugin;
 
 @WailaPlugin
 public class CombatPropertiesWailaPlugin implements IWailaPlugin {
@@ -13,8 +12,18 @@ public class CombatPropertiesWailaPlugin implements IWailaPlugin {
     static final ResourceLocation COMBAT_PROPERTIES = new ResourceLocation(ElementalCombatJade.MOD_ID, "combat_properties");
 
     @Override
-    public void register(IRegistrar registrar) {
-        registrar.registerComponentProvider(EntityComponentProvider.INSTANCE, TooltipPosition.BODY, LivingEntity.class);
+    public void register() {
+        // registrar.registerComponentProvider(EntityComponentProvider.INSTANCE, TooltipPosition.BODY, LivingEntity.class);
         ElementalCombatJade.LOGGER.info("Jade Plugin registered.");
+    }
+
+    @Override
+    public void register(IWailaCommonRegistration registration) {
+        // TODO register data providers
+    }
+
+    @Override
+    public void registerClient(IWailaClientRegistration registration) {
+        // TODO register component providers, icon providers, callbacks, and config options here
     }
 }

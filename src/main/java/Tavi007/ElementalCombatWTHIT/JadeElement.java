@@ -5,9 +5,9 @@ import java.awt.Dimension;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 import Tavi007.ElementalCombat.api.ElementalCombatDataRenderAPI;
-import mcp.mobius.waila.api.ui.Element;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec2;
+import snownee.jade.api.ui.Element;
 
 public class JadeElement extends Element {
 
