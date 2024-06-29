@@ -15,7 +15,7 @@ logoFile = "Icon.png" #optional. A file name (in the root of the mod JAR) contai
 credits = "Thanks goes to the Forge Forum" #optional
 authors = "Tavi007" #optional
 
-description= "A WTHIT plugin for the mod Elemental Combat."
+description= "A Jade plugin for the mod Elemental Combat."
 
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.elementalcombat_jade]] #optional
