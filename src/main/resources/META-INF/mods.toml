@@ -1,11 +1,11 @@
 modLoader="javafml" #mandatory
-loaderVersion="[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[37,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="All rights reserved"
 
 #issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId = "elementalcombat_jade" #mandatory
-version = "1.0" #mandatory
+version = "1.1" #mandatory
 
 displayName = "Elemental Combat - Jade" #mandatory
 #updateJSONURL = "http://myurl.me/" #optional
@@ -21,7 +21,7 @@ description= "A Jade plugin for the mod Elemental Combat."
 [[dependencies.elementalcombat_jade]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
-    versionRange="[36,)" #mandatory
+    versionRange="[37,)" #mandatory
     ordering="NONE"
     side="BOTH"
 # Here's another dependency
