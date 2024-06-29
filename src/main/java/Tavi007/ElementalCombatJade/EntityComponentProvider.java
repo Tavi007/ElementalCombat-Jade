@@ -1,27 +1,24 @@
 package Tavi007.ElementalCombatJade;
 
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.LivingEntity;
-import snownee.jade.api.EntityAccessor;
-import snownee.jade.api.IEntityComponentProvider;
-import snownee.jade.api.ITooltip;
-import snownee.jade.api.config.IPluginConfig;
+import java.util.List;
+
+import mcp.mobius.waila.api.IEntityAccessor;
+import mcp.mobius.waila.api.IEntityComponentProvider;
+import mcp.mobius.waila.api.IPluginConfig;
+import mcp.mobius.waila.api.RenderableTextComponent;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.util.text.ITextComponent;
 
 public class EntityComponentProvider implements IEntityComponentProvider {
 
     static final IEntityComponentProvider INSTANCE = new EntityComponentProvider();
-    static final ResourceLocation uid = new ResourceLocation(ElementalCombatJade.MOD_ID, "combat_properties");
 
     @Override
-    public void appendTooltip(ITooltip tooltip, EntityAccessor accessor, IPluginConfig config) {
+    public void appendBody(List<ITextComponent> tooltip, IEntityAccessor accessor, IPluginConfig config) {
         if (accessor.getEntity() instanceof LivingEntity) {
-            JadeElement element = new JadeElement((LivingEntity) accessor.getEntity());
-            tooltip.add(element);
+            CompoundNBT nbt = new CompoundNBT();
+            tooltip.add(new RenderableTextComponent(CombatPropertiesWailaPlugin.COMBAT_PROPERTIES, nbt));
         }
-    }
-
-    @Override
-    public ResourceLocation getUid() {
-        return uid;
     }
 }
