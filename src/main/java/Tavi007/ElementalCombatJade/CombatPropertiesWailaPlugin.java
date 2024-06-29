@@ -7,7 +7,7 @@ import snownee.jade.api.IWailaCommonRegistration;
 import snownee.jade.api.IWailaPlugin;
 import snownee.jade.api.WailaPlugin;
 
-@WailaPlugin
+@WailaPlugin(ElementalCombatJade.MOD_ID)
 public class CombatPropertiesWailaPlugin implements IWailaPlugin {
 
     static final ResourceLocation COMBAT_PROPERTIES = new ResourceLocation(ElementalCombatJade.MOD_ID, "combat_properties");
