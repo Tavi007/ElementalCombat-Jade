@@ -5,7 +5,7 @@ license="All rights reserved"
 #issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId = "elementalcombat_jade" #mandatory
-version = "1.3" #mandatory
+version = "1.4" #mandatory
 
 displayName = "Elemental Combat - Jade" #mandatory
 #updateJSONURL = "http://myurl.me/" #optional
