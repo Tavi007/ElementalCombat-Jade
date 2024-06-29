@@ -1,7 +1,0 @@
-{
-  "elementalcombat_jade:combat_properties": {
-    "initializer": "Tavi007.ElementalCombatJade.CombatPropertiesWailaPlugin",
-    "side": "client",
-    "required": []
-  }
-}
