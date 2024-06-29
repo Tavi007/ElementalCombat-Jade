@@ -40,6 +40,6 @@ description= "A Jade plugin for the mod Elemental Combat."
 [[dependencies.elementalcombat_jade]]
     modId="jade"
     mandatory=true
-    versionRange="[11.9.3,)"
+    versionRange="[11.9.0,)"
     ordering="NONE"
     side="BOTH"
